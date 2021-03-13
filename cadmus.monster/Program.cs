@@ -1,5 +1,6 @@
 ﻿using cadmus.monster.src;
 using System;
+using System.Linq;
 using System.Reflection;
 
 namespace cadmus.monster
@@ -17,14 +18,17 @@ namespace cadmus.monster
 
                 Console.WriteLine($"Monster v{versionString}");
                 Console.WriteLine("-------------");
-                CreateFile.GenerateFile();
-
+                
                 return;
             } 
+            else if (args.Contains("-className"))
+            {
+                int index = Array.IndexOf(args, "-className");
+                ReadFile.ReadClassFile(args[index + 1]);
+            }
             else
             {
-                Console.WriteLine("VIA PARAMENTRO COMANDO");
-                CreateFile.GenerateFile();
+                ReadFile.ReadClassFile(args[0]);
             }
         }
     }
