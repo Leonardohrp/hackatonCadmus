@@ -7,24 +7,49 @@ namespace cadmus.monster.src
     public class WriteFile
     {
         public const string INSERT = "Insert";
-
+        public const string DELETE = "Delete";
         public string WriteClass(string className, List<string> propertys)
         {
             var sb = new StringBuilder();
             sb.AppendFormat("public class {0}Repository", className).AppendLine();
             sb.AppendLine("{");
+            sb.Append(GenerateInsert(className, propertys));
+            sb.Append(GenerateDelete(className));
+            sb.AppendLine("}");
+            return sb.ToString();
+
+        }
+
+        private string GenerateInsert(string className, List<string> propertys)
+        {
+            var sb = new StringBuilder();
             sb.AppendFormat("   public async Task {0}{1}()", INSERT, className).AppendLine();
             sb.AppendLine("     {");
             sb.AppendLine("         using (var db = new SqlConnection(ConnectionString))");
             sb.AppendLine("         {");
-            sb.AppendFormat("             const string sql = @{0};", GenerateSQL(propertys, "INSERT INTO", className)).AppendLine();
+            sb.AppendFormat("             const string sql = \"@{0}\";", GenerateSQL(propertys, "INSERT INTO", className)).AppendLine();
             sb.AppendLine("             await db.ExecuteAsync(sql, new");
             sb.AppendLine("             {");
             sb.AppendFormat("{0}", GenerateObject(propertys, className));
             sb.AppendLine("             }, commandType: CommandType.Text);");
             sb.AppendLine("         }");
-            sb.AppendLine("     }");
-            sb.AppendLine("}");
+            sb.AppendLine("     }\n");
+            return sb.ToString();
+        }
+
+        private string GenerateDelete(string className)
+        {
+            var sb = new StringBuilder();
+            sb.AppendFormat("   public async Task {0}{1}({1} {2})", DELETE, className, className.ToLower()).AppendLine();
+            sb.AppendLine("     {");
+            sb.AppendLine("         using (var db = new SqlConnection(ConnectionString))");
+            sb.AppendLine("         {");
+            sb.AppendFormat("             const string sql = \"@{0} FROM [{1}] WHERE ID = @ID\";", DELETE.ToUpper(), className).AppendLine();
+            sb.Append("               await db.ExecuteAsync(sql, new { ");
+            sb.AppendFormat("{0}.ID ", className.ToLower());
+            sb.Append(" }, commandType: CommandType.Text);").AppendLine();
+            sb.AppendLine("         }");
+            sb.AppendLine("     }\n");
             return sb.ToString();
         }
 
