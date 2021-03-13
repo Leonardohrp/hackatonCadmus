@@ -7,6 +7,7 @@ namespace cadmus.monster.src
     public class WriteFile
     {
         public const string INSERT = "Insert";
+
         public string WriteClass(string className, List<string> propertys)
         {
             var sb = new StringBuilder();
@@ -25,7 +26,6 @@ namespace cadmus.monster.src
             sb.AppendLine("     }");
             sb.AppendLine("}");
             return sb.ToString();
-
         }
 
         private string GenerateColumns(List<string> propertys)
@@ -43,7 +43,7 @@ namespace cadmus.monster.src
         {
             var values = new StringBuilder();
             values.AppendFormat("@{0}", propertys.First());
-            for(int i = 1; i < propertys.Count; i++)
+            for (int i = 1; i < propertys.Count; i++)
             {
                 values.AppendFormat(", @{0}", propertys[i]);
             };
@@ -64,7 +64,7 @@ namespace cadmus.monster.src
             var property = new StringBuilder();
             foreach (string p in propertys)
             {
-                property.AppendFormat("                   {0} " + "="+" {1}.{2},", p, className, p).AppendLine();
+                property.AppendFormat("                   {0} " + "=" + " {1}.{2},", p, className, p).AppendLine();
             };
             return property.ToString();
         }

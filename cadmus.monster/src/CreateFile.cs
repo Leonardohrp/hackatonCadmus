@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Reflection;
 using System.Text;
 
 namespace cadmus.monster.src
 {
     public static class CreateFile
     {
-        public static void GenerateFile(string className, List<string> propertys) 
+        public static void GenerateFile(string className, List<string> propertys)
         {
             string folderName = Environment.CurrentDirectory;
 
@@ -17,7 +16,7 @@ namespace cadmus.monster.src
 
             Directory.CreateDirectory(pathString);
 
-            var classNameTemp = className.Split(".").First(); 
+            var classNameTemp = className.Split(".").First();
 
             string fileName = String.Format("{0}Repository.cs", classNameTemp);
 
@@ -33,10 +32,11 @@ namespace cadmus.monster.src
 
                     fs.Write(bytes, 0, bytes.Length);
                 }
+                Console.WriteLine("Arquivo \"{0}\" criado com sucesso. :)", fileName);
             }
             else
             {
-                Console.WriteLine("File \"{0}\" already exists.", fileName);
+                Console.WriteLine("Arquivo \"{0}\" já existe.", fileName);
                 return;
             }
         }
