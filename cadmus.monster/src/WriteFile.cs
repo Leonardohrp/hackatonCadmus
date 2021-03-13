@@ -12,7 +12,7 @@ namespace cadmus.monster.src
             var sb = new StringBuilder();
             sb.AppendFormat("public class {0}Repository", className).AppendLine();
             sb.AppendLine("{");
-            sb.AppendFormat("   public Task {0}{1}()", INSERT, className).AppendLine();
+            sb.AppendFormat("   public async Task {0}{1}()", INSERT, className).AppendLine();
             sb.AppendLine("     {");
             sb.AppendLine("         using (var db = new SqlConnection(ConnectionString))");
             sb.AppendLine("         {");

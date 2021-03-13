@@ -11,7 +11,7 @@ namespace cadmus.monster.src
     {
         public static void GenerateFile(string className, List<string> propertys) 
         {
-            string folderName = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+            string folderName = Environment.CurrentDirectory;
 
             string pathString = Path.Combine(folderName, "Repository");
 
@@ -22,8 +22,6 @@ namespace cadmus.monster.src
             string fileName = String.Format("{0}Repository.cs", classNameTemp);
 
             pathString = Path.Combine(pathString, fileName);
-
-            Console.WriteLine("Path to my file: {0}\n", pathString);
 
             if (!File.Exists(pathString))
             {

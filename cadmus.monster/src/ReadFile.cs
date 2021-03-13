@@ -10,7 +10,7 @@ namespace cadmus.monster.src
     {
         public static List<string> ReadClassFile(string className)
         {
-            var pathString = FindClass.FindClassByName(className);
+            var pathString = FindClass.FindClassByName(className);         
 
             if(pathString == "Arquivo não encontrado")
             {

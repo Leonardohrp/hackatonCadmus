@@ -23,10 +23,8 @@ namespace cadmus.monster
             }
             else if (args.Contains("--className") || args.Contains("-c"))
             {
-                int index = (args.Contains("--className")) ? Array.IndexOf(args, "--className") : Array.IndexOf(args, "-c");
-                string folderName = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                Console.WriteLine($"Dir {folderName}");
-                ReadFile.ReadClassFile(args[index + 1]);
+                int indexClassName = (args.Contains("--className")) ? Array.IndexOf(args, "--className") : Array.IndexOf(args, "-c");
+                ReadFile.ReadClassFile(args[indexClassName + 1]);
             }
             else if (args.Contains("-a") || args.Contains("--about"))
             {
