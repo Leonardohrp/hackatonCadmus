@@ -37,6 +37,8 @@ Foi criado uma library que tem por função a criação do CRUD automatizado, ap
 
 A library deve ser instalada globalmente no computador para a utilização via CLI(verificar no tópico "Instalação")
 
+Para essa solução, é pressuposto que será usador Dapper como ORM e SQL-SERVER como Banco de Dados.
+
 Comandos:
 ```bash
 # Como usar
@@ -74,6 +76,13 @@ $ monster --help
 ## Status
 
 <h4> 🚧 API .Net 🚀 em construção... 🚧 </h4>
+
+#### Roadmap
+- [x] Criação do CRUD automatizado
+- [ ] Construção de HTTP client automático
+- [ ] Parâmetro de path e nome da pasta
+- [ ] CRUD com outras tecnologias (entity framework)
+- [ ] Parâmetro de escolha de Banco de Dados
 
 
 ## Requisitos
