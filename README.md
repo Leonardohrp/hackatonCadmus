@@ -122,6 +122,11 @@ $ monster --version
 # Entre no diretório raiz do projeto desejado e execute o comando para gerar o CRUD
 
 $ monster --className <NomeClasse.cs>
+
+
+# Para desinstalar o pacote basta executar
+
+$ dotnet tool uninstall -g cadmus.monster
 ```
 
   
