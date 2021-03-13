@@ -1,0 +1,16 @@
+C:\Users\jfilho\Documents\cadmus\hackthon\hackatonCadmus\cadmus.monster\bin\Debug\net5.0\cadmus.monster.exe
+C:\Users\jfilho\Documents\cadmus\hackthon\hackatonCadmus\cadmus.monster\bin\Debug\net5.0\cadmus.monster.deps.json
+C:\Users\jfilho\Documents\cadmus\hackthon\hackatonCadmus\cadmus.monster\bin\Debug\net5.0\cadmus.monster.runtimeconfig.json
+C:\Users\jfilho\Documents\cadmus\hackthon\hackatonCadmus\cadmus.monster\bin\Debug\net5.0\cadmus.monster.runtimeconfig.dev.json
+C:\Users\jfilho\Documents\cadmus\hackthon\hackatonCadmus\cadmus.monster\bin\Debug\net5.0\cadmus.monster.dll
+C:\Users\jfilho\Documents\cadmus\hackthon\hackatonCadmus\cadmus.monster\bin\Debug\net5.0\ref\cadmus.monster.dll
+C:\Users\jfilho\Documents\cadmus\hackthon\hackatonCadmus\cadmus.monster\bin\Debug\net5.0\cadmus.monster.pdb
+C:\Users\jfilho\Documents\cadmus\hackthon\hackatonCadmus\cadmus.monster\obj\Debug\net5.0\cadmus.monster.csprojAssemblyReference.cache
+C:\Users\jfilho\Documents\cadmus\hackthon\hackatonCadmus\cadmus.monster\obj\Debug\net5.0\cadmus.monster.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jfilho\Documents\cadmus\hackthon\hackatonCadmus\cadmus.monster\obj\Debug\net5.0\cadmus.monster.AssemblyInfoInputs.cache
+C:\Users\jfilho\Documents\cadmus\hackthon\hackatonCadmus\cadmus.monster\obj\Debug\net5.0\cadmus.monster.AssemblyInfo.cs
+C:\Users\jfilho\Documents\cadmus\hackthon\hackatonCadmus\cadmus.monster\obj\Debug\net5.0\cadmus.monster.csproj.CoreCompileInputs.cache
+C:\Users\jfilho\Documents\cadmus\hackthon\hackatonCadmus\cadmus.monster\obj\Debug\net5.0\cadmus.monster.dll
+C:\Users\jfilho\Documents\cadmus\hackthon\hackatonCadmus\cadmus.monster\obj\Debug\net5.0\ref\cadmus.monster.dll
+C:\Users\jfilho\Documents\cadmus\hackthon\hackatonCadmus\cadmus.monster\obj\Debug\net5.0\cadmus.monster.pdb
+C:\Users\jfilho\Documents\cadmus\hackthon\hackatonCadmus\cadmus.monster\obj\Debug\net5.0\cadmus.monster.genruntimeconfig.cache
