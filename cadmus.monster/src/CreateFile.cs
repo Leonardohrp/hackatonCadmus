@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
+using System.Text;
 
 namespace cadmus.monster.src
 {
@@ -14,7 +16,7 @@ namespace cadmus.monster.src
 
             Directory.CreateDirectory(pathString);
 
-            string fileName = "MyNewFile.cs";
+            string fileName = "MyNewFile2.cs";
 
             pathString = Path.Combine(pathString, fileName);
 
@@ -24,10 +26,16 @@ namespace cadmus.monster.src
             {
                 using (FileStream fs = File.Create(pathString))
                 {
-                    for (byte i = 0; i < 100; i++)
-                    {
-                        fs.WriteByte(i);
-                    }
+                    var name = "Professor";
+                    var write = new WriteFile();
+                    var lista = new List<string>();
+                    lista.Add("Name");
+                    lista.Add("Idade");
+                    lista.Add("Salario");
+                    var text = write.WriteClass(name, lista);
+                    byte[] bytes = Encoding.UTF8.GetBytes(text);
+
+                    fs.Write(bytes, 0, bytes.Length);
                 }
             }
             else
