@@ -15,14 +15,10 @@ namespace cadmus.monster.src
             if(pathString == "Arquivo não encontrado")
             {
                 return new List<string> { "Arquivo não encontrado" };
-            }
-          
-            string folderName = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+            }        
 
             List<string> parametersNames = new List<string>();
-
-            Console.WriteLine("Path to my file: {0}\n", pathString);
-
+            
             try
             {
                 var names = File.ReadLines(pathString)
@@ -32,6 +28,11 @@ namespace cadmus.monster.src
                       .Select(split => split[2])
                       .ToList();
 
+                if (names.Count == 0)
+                {
+                    Console.WriteLine("Arquivo sem parâmetros");
+                    return names;
+                }
 
                 foreach (string line in names)
                 {

@@ -2,7 +2,7 @@
   "profiles": {
     "cadmus.monster": {
       "commandName": "Project",
-      "commandLineArgs": "monster --asdasd"
+      "commandLineArgs": "monster -c MyNewFile.cs"
     }
   }
 }
