@@ -68,17 +68,47 @@ C:::::C               a::::aaaa::::::a d:::::d     d:::::d m::::m   m::::m   m::
             }
             else if (args.Contains("-h") || args.Contains("--help"))
             {
-                Console.WriteLine($"Monster v{versionString}\n" +
-                    "Uso: monster [Argumentos] [classname.cs]\n\n" +
-                    "Argumentos:\n" +
+                Console.WriteLine($"Monster v{versionString}\n\n" +
+                    "Uso: monster [argumentos] [classname.cs]\n\n" +
+                    "O comando deve ser executado na pasta raiz do projeto desejado.\n" +
+                    "O nome do Model deve conter a extensão '.cs'.\n" +
+                    "Exemplo de uso: 'monster --className Professor.cs'.\n\n" +
+                    "argumentos:\n" +
                     " -a|--about\t\tExibe informações do Monster.\n" +
+                    " -c|--className\t\tCria o CRUD para o Model informado em [classname.cs].\n" +
                     " -h|--help\t\tExibe a ajuda da linha de comando.\n" +
-                    " -v|--version\t\tExibe a versão em uso.\n\n"
+                    " -v|--version\t\tExibe a versão em uso.\n\n" +
+                    "classname.cs:\n" +
+                    " O nome do Model com a extensão .cs\n"
                 );
             }
             else if (args.Contains("-v") || args.Contains("--version"))
             {
                 Console.WriteLine($"Monster v{versionString}\n");
+            }
+            else if (args.Contains("--250coins"))
+            {
+                string ballon = @"
+                                 _ .--.
+                                ( `    )
+                             .-'      `--,
+                  _..----.. (             )`-.
+                .'_|` _|` _|(  .__,           )
+               /_|  _|  _|  _(        (_,  .-'
+              ;|  _|  _|  _|  '-'__,--'`--'
+              | _|  _|  _|  _| |
+          _   ||  _|  _|  _|  _|
+        _( `--.\_|  _|  _|  _|/
+     .-'       )--,|  _|  _|.`
+    (__, (_      ) )_|  _| /
+      `-.__.\ _,--'\|__|__/
+                    ;____;
+                     \YT/
+                      ||
+                     |""|
+                     '=='";
+                Console.Clear();
+                Console.WriteLine(ballon);
             }
             else
             {
