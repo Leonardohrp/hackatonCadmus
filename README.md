@@ -106,7 +106,7 @@ Essas Classes serão usadas como parâmetro para a Geração do CRUD automática
 
 # Baixe o pacote no link abaixo
 
-https://drive.google.com/file/d/1vI9yKD8YsZq-Vj42Vcjy1wSR1kFhSWhQ/view?usp=sharing
+https://drive.google.com/file/d/1rvAit6TbRvzGzcmGJpPXy8nqyCFXIkCj/view?usp=sharing
 
  
 # Entre no diretório do pacote baixado e execute o comando
