@@ -1,5 +1,6 @@
 ﻿using cadmus.monster.src;
 using System;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 
@@ -17,13 +18,14 @@ namespace cadmus.monster
             {
                 Console.WriteLine($"Monster v{versionString}");
                 Console.WriteLine("-------------");
-                CreateFile.GenerateFile();
 
                 return;
             }
-            else if (args.Contains("--className") || args.Contains("-cn"))
+            else if (args.Contains("--className") || args.Contains("-c"))
             {
-                int index = Array.IndexOf(args, "-className");
+                int index = (args.Contains("--className")) ? Array.IndexOf(args, "--className") : Array.IndexOf(args, "-c");
+                string folderName = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+                Console.WriteLine($"Dir {folderName}");
                 ReadFile.ReadClassFile(args[index + 1]);
             }
             else if (args.Contains("-a") || args.Contains("--about"))

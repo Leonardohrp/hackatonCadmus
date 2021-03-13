@@ -10,7 +10,7 @@ namespace cadmus.monster.src
         public string WriteClass(string className, List<string> propertys)
         {
             var sb = new StringBuilder();
-            sb.AppendFormat("public class {0}", className).AppendLine();
+            sb.AppendFormat("public class {0}Repository", className).AppendLine();
             sb.AppendLine("{");
             sb.AppendFormat("   public Task {0}{1}()", INSERT, className).AppendLine();
             sb.AppendLine("     {");

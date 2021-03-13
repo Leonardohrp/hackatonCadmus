@@ -38,6 +38,8 @@ namespace cadmus.monster.src
                     parametersNames.Add(line);
                 }
 
+                CreateFile.GenerateFile(className, parametersNames);
+
                 return parametersNames;
             }
             catch (IOException e)
