@@ -14,6 +14,7 @@ namespace cadmus.monster.src
 
             if(pathString == "Arquivo não encontrado")
             {
+                Console.WriteLine("Arquivo não encontrado");
                 return new List<string> { "Arquivo não encontrado" };
             }        
 

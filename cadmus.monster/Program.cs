@@ -24,6 +24,11 @@ namespace cadmus.monster
             else if (args.Contains("--className") || args.Contains("-c"))
             {
                 int indexClassName = (args.Contains("--className")) ? Array.IndexOf(args, "--className") : Array.IndexOf(args, "-c");
+                if(!args[indexClassName + 1].Contains(".cs"))
+                {
+                    Console.WriteLine("Arquivo com extensão inválida");
+                    return;
+                }
                 ReadFile.ReadClassFile(args[indexClassName + 1]);
             }
             else if (args.Contains("-a") || args.Contains("--about"))
