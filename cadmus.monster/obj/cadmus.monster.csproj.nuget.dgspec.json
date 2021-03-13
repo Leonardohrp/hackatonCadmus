@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jfilho\\Documents\\cadmus\\hackthon\\hackatonCadmus\\cadmus.monster\\cadmus.monster.csproj": {}
+    "C:\\Users\\Leonardo Pinheiro\\Desktop\\Cadmus\\hackatonCadmus\\cadmus.monster\\cadmus.monster.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jfilho\\Documents\\cadmus\\hackthon\\hackatonCadmus\\cadmus.monster\\cadmus.monster.csproj": {
+    "C:\\Users\\Leonardo Pinheiro\\Desktop\\Cadmus\\hackatonCadmus\\cadmus.monster\\cadmus.monster.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jfilho\\Documents\\cadmus\\hackthon\\hackatonCadmus\\cadmus.monster\\cadmus.monster.csproj",
+        "projectUniqueName": "C:\\Users\\Leonardo Pinheiro\\Desktop\\Cadmus\\hackatonCadmus\\cadmus.monster\\cadmus.monster.csproj",
         "projectName": "cadmus.monster",
-        "projectPath": "C:\\Users\\jfilho\\Documents\\cadmus\\hackthon\\hackatonCadmus\\cadmus.monster\\cadmus.monster.csproj",
-        "packagesPath": "C:\\Users\\jfilho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jfilho\\Documents\\cadmus\\hackthon\\hackatonCadmus\\cadmus.monster\\obj\\",
+        "projectPath": "C:\\Users\\Leonardo Pinheiro\\Desktop\\Cadmus\\hackatonCadmus\\cadmus.monster\\cadmus.monster.csproj",
+        "packagesPath": "C:\\Users\\Leonardo Pinheiro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Leonardo Pinheiro\\Desktop\\Cadmus\\hackatonCadmus\\cadmus.monster\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jfilho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Leonardo Pinheiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
