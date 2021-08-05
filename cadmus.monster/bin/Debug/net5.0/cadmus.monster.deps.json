@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "cadmus.monster/1.0.0": {
+        "runtime": {
+          "cadmus.monster.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "cadmus.monster/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

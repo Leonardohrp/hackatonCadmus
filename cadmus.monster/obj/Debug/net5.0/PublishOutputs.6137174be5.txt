@@ -1,0 +1,5 @@
+C:\Users\jfilho\Documents\cadmus\hackthon\hackatonCadmus\cadmus.monster\bin\Debug\net5.0\publish\cadmus.monster.exe
+C:\Users\jfilho\Documents\cadmus\hackthon\hackatonCadmus\cadmus.monster\bin\Debug\net5.0\publish\cadmus.monster.dll
+C:\Users\jfilho\Documents\cadmus\hackthon\hackatonCadmus\cadmus.monster\bin\Debug\net5.0\publish\cadmus.monster.deps.json
+C:\Users\jfilho\Documents\cadmus\hackthon\hackatonCadmus\cadmus.monster\bin\Debug\net5.0\publish\cadmus.monster.runtimeconfig.json
+C:\Users\jfilho\Documents\cadmus\hackthon\hackatonCadmus\cadmus.monster\bin\Debug\net5.0\publish\cadmus.monster.pdb
