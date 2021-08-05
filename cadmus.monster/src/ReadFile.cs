@@ -10,19 +10,16 @@ namespace cadmus.monster.src
     {
         public static List<string> ReadClassFile(string className)
         {
-            var pathString = FindClass.FindClassByName(className);
+            var pathString = FindClass.FindClassByName(className);         
 
             if(pathString == "Arquivo não encontrado")
             {
+                Console.WriteLine("Arquivo não encontrado");
                 return new List<string> { "Arquivo não encontrado" };
-            }
-          
-            string folderName = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+            }        
 
             List<string> parametersNames = new List<string>();
-
-            Console.WriteLine("Path to my file: {0}\n", pathString);
-
+            
             try
             {
                 var names = File.ReadLines(pathString)
@@ -32,11 +29,18 @@ namespace cadmus.monster.src
                       .Select(split => split[2])
                       .ToList();
 
+                if (names.Count == 0)
+                {
+                    Console.WriteLine("Arquivo sem parâmetros");
+                    return names;
+                }
 
                 foreach (string line in names)
                 {
                     parametersNames.Add(line);
                 }
+
+                CreateFile.GenerateFile(className, parametersNames);
 
                 return parametersNames;
             }

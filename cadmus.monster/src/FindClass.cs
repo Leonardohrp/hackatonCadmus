@@ -11,7 +11,7 @@ namespace cadmus.monster.src
         {
             try
             {
-                string folderName = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+                string folderName = Environment.CurrentDirectory;
 
                 string[] filePaths = Directory.GetFiles(folderName, "*.cs", SearchOption.AllDirectories);
 

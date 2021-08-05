@@ -1,38 +1,42 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
-using System.Reflection;
+using System.Linq;
+using System.Text;
 
 namespace cadmus.monster.src
 {
     public static class CreateFile
     {
-        public static void GenerateFile()
+        public static void GenerateFile(string className, List<string> propertys)
         {
-            string folderName = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+            string folderName = Environment.CurrentDirectory;
 
             string pathString = Path.Combine(folderName, "Repository");
 
             Directory.CreateDirectory(pathString);
 
-            string fileName = "MyNewFile.cs";
+            var classNameTemp = className.Split(".").First();
+
+            string fileName = String.Format("{0}Repository.cs", classNameTemp);
 
             pathString = Path.Combine(pathString, fileName);
-
-            Console.WriteLine("Path to my file: {0}\n", pathString);
 
             if (!File.Exists(pathString))
             {
                 using (FileStream fs = File.Create(pathString))
                 {
-                    for (byte i = 0; i < 100; i++)
-                    {
-                        fs.WriteByte(i);
-                    }
+                    var write = new WriteFile();
+                    var text = write.WriteClass(classNameTemp, propertys);
+                    byte[] bytes = Encoding.UTF8.GetBytes(text);
+
+                    fs.Write(bytes, 0, bytes.Length);
                 }
+                Console.WriteLine("Arquivo \"{0}\" criado com sucesso. :)", fileName);
             }
             else
             {
-                Console.WriteLine("File \"{0}\" already exists.", fileName);
+                Console.WriteLine("Arquivo \"{0}\" já existe.", fileName);
                 return;
             }
         }

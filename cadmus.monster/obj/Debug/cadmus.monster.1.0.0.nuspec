@@ -11,10 +11,10 @@
     </packageTypes>
   </metadata>
   <files>
-    <file src="C:\Users\jfilho\Documents\cadmus\hackthon\hackatonCadmus\cadmus.monster\obj\DotnetToolSettings.xml" target="tools\net5.0\any\DotnetToolSettings.xml" />
-    <file src="C:\Users\jfilho\Documents\cadmus\hackthon\hackatonCadmus\cadmus.monster\bin\Debug\net5.0\publish\cadmus.monster.dll" target="tools\net5.0\any\cadmus.monster.dll" />
-    <file src="C:\Users\jfilho\Documents\cadmus\hackthon\hackatonCadmus\cadmus.monster\bin\Debug\net5.0\publish\cadmus.monster.deps.json" target="tools\net5.0\any\cadmus.monster.deps.json" />
-    <file src="C:\Users\jfilho\Documents\cadmus\hackthon\hackatonCadmus\cadmus.monster\bin\Debug\net5.0\publish\cadmus.monster.runtimeconfig.json" target="tools\net5.0\any\cadmus.monster.runtimeconfig.json" />
-    <file src="C:\Users\jfilho\Documents\cadmus\hackthon\hackatonCadmus\cadmus.monster\bin\Debug\net5.0\publish\cadmus.monster.pdb" target="tools\net5.0\any\cadmus.monster.pdb" />
+    <file src="C:\Users\Leonardo Pinheiro\Desktop\Cadmus\hackatonCadmus\cadmus.monster\obj\DotnetToolSettings.xml" target="tools\net5.0\any\DotnetToolSettings.xml" />
+    <file src="C:\Users\Leonardo Pinheiro\Desktop\Cadmus\hackatonCadmus\cadmus.monster\bin\Debug\net5.0\publish\cadmus.monster.dll" target="tools\net5.0\any\cadmus.monster.dll" />
+    <file src="C:\Users\Leonardo Pinheiro\Desktop\Cadmus\hackatonCadmus\cadmus.monster\bin\Debug\net5.0\publish\cadmus.monster.deps.json" target="tools\net5.0\any\cadmus.monster.deps.json" />
+    <file src="C:\Users\Leonardo Pinheiro\Desktop\Cadmus\hackatonCadmus\cadmus.monster\bin\Debug\net5.0\publish\cadmus.monster.runtimeconfig.json" target="tools\net5.0\any\cadmus.monster.runtimeconfig.json" />
+    <file src="C:\Users\Leonardo Pinheiro\Desktop\Cadmus\hackatonCadmus\cadmus.monster\bin\Debug\net5.0\publish\cadmus.monster.pdb" target="tools\net5.0\any\cadmus.monster.pdb" />
   </files>
 </package>
